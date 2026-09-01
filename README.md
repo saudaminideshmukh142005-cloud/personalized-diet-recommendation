@@ -69,3 +69,64 @@ The dataset contained a feature:
 
 ```text
 Recommended_Calories
+
+
+🧪 Leakage Experiment
+
+To understand the effect of leakage, two experiments were performed.
+
+Model 1 — With Leakage
+
+Recommended_Calories was included as a feature.
+
+Performance
+MAE  : 90.03
+RMSE : 107.68
+R²   : 0.9734
+
+The performance looked extremely good.
+
+However, this result was not considered reliable because the model had access to a potentially target-derived feature.
+
+Model 2 — Clean Model
+
+Recommended_Calories was removed before training.
+
+Performance
+MAE  : 580.67
+RMSE : 667.32
+R²   : -0.0223
+
+This was a major performance drop.
+
+What does this show?
+
+It demonstrates that:
+
+High model performance does not always mean a good model.
+
+A model can achieve an excellent R² score because of leakage rather than because it has genuinely learned useful relationships from independent input features.
+
+This was one of the main learning outcomes of the project.
+
+📊 Leakage vs Clean Model
+Model	Recommended_Calories	MAE	RMSE	R²
+Leakage Model	Included	90.03	107.68	0.9734
+Clean Model	Removed	580.67	667.32	-0.0223
+Interpretation
+
+The leakage model appears significantly better.
+
+However:
+
+R² = 0.9734
+
+should not automatically be considered a success because the model may be benefiting from leaked information.
+
+After removing the suspected leakage feature:
+
+R² = -0.0223
+
+This indicates that the remaining features in the current dataset do not provide enough predictive information for the selected model to reliably predict Caloric_Intake.
+
+This result is valuable because it exposes a limitation in the dataset instead of hiding it behind artificially high accuracy.
