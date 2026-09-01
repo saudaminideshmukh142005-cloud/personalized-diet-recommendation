@@ -47,7 +47,7 @@ The main objectives of this project are:
 
 ## 🔬 Research Focus — Data Leakage
 
-## 🚨 Why Data Leakage Matters
+Why Data Leakage Matters:-
 
 One of the most important findings of this project was **data leakage**.
 
@@ -55,9 +55,11 @@ Data leakage occurs when information that should not be available to the model d
 
 This can make the model appear highly accurate during testing, while the performance may not represent how the model would behave on genuinely unseen real-world data.
 
-### Example
 
-The dataset contained a feature:
 
-```text
-Recommended_Calories
+### Model Performance: Data Leakage Impact
+
+| Model | Recommended_Calories | MAE | RMSE | R² |
+|---|---|---:|---:|---:|
+| Leakage Model | Included | 90.03 | 107.68 | 0.9734 |
+| Clean Model | Removed | 580.67 | 667.32 | -0.0223 |
