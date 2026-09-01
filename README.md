@@ -224,7 +224,8 @@ A strong ML workflow should therefore focus on:
 
 **Data Quality → Valid Preprocessing → Leakage Detection → Appropriate Modeling → Meaningful Evaluation → Reliable Conclusions**
 
-This project shifted my perspective from **“How can I get a better score?”** to **“Why is the model performing this way, and can I trust the result?”**
+This project shifted my perspective from *“How can I get a better score?”* to *“Why is the model performing this way, and can I trust the result?”*
+
 ---
 ### 🏗️ Technologies Used
 
