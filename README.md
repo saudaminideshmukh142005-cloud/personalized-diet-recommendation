@@ -45,9 +45,9 @@ The main objectives of this project are:
 
 ---
 
-##🔬 Research Focus — Data Leakage
+## 🔬 Research Focus — Data Leakage
 
- 🚨 Why Data Leakage Matters
+# 🚨 Why Data Leakage Matters
 
 One of the most important findings of this project was **data leakage**.
 
