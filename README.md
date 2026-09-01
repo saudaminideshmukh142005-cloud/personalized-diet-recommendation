@@ -325,7 +325,7 @@ requirements.txt
 The dataset used for training is not required to run the deployed prediction interface if the trained model has already been saved.
 ---
 
-## 📂 Project Structure
+### 📂 Project Structure
 
 ```text
 personalized-diet-recommendation/
@@ -341,7 +341,7 @@ personalized-diet-recommendation/
 └── .gitignore
 ```
 
-## 📄 File Description
+### 📄 File Description
 
 | File / Folder                           | Description                                   |
 | --------------------------------------- | --------------------------------------------- |
