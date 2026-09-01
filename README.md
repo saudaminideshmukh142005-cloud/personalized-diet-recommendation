@@ -351,7 +351,11 @@ personalized-diet-recommendation/
 | `README.md`                             | Project documentation                         |
 | `.gitignore`                            | Files and folders excluded from Git tracking  |
 
+
 ---
+## 🖥️ Application Screenshot
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3bda75a6-4549-4c98-a88f-2b346136c5da" />
+
 ## 👩‍💻 Author
 
 **Saudamini Deshmukh**
