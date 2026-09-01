@@ -44,7 +44,7 @@ The main objectives of this project are:
 12. Deploy the model using a simple Streamlit interface.
 
 ---
-# 📊 Dataset
+## 📊 Dataset
 
 The dataset contains **5,000 records**.
 
@@ -108,7 +108,7 @@ This can make the model appear highly accurate during testing, while the perform
 
 
 
-# 🧠 What I Learned
+## 🧠 What I Learned
 
 This project taught me that **Machine Learning is not just about choosing an algorithm and achieving a high evaluation score.** Reliable ML depends heavily on understanding the data, validating assumptions, and making scientifically justified preprocessing decisions.
 
@@ -322,7 +322,7 @@ app.py
 clean_model.pkl
 requirements.txt
 ```
-### 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 personalized-diet-recommendation/
