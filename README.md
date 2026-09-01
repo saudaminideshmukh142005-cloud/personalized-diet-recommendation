@@ -87,6 +87,7 @@ Three strategies were considered:
 * **Unknown Category:** Preserves records while retaining information that the value was missing.
 
 **Key takeaway:** Missing-value handling was treated as a modeling decision because it can affect the **training data, feature distributions, model performance, and generalization**.
+---
 
 # 🧠 What I Learned
 
@@ -224,4 +225,16 @@ A strong ML workflow should therefore focus on:
 **Data Quality → Valid Preprocessing → Leakage Detection → Appropriate Modeling → Meaningful Evaluation → Reliable Conclusions**
 
 This project shifted my perspective from **“How can I get a better score?”** to **“Why is the model performing this way, and can I trust the result?”**
+---
+### 🏗️ Technologies Used
 
+| Technology | Purpose |
+|------------|---------|
+| 🐍 Python | Programming |
+| 🐼 Pandas | Data manipulation and preprocessing |
+| 🔢 NumPy | Numerical operations |
+| 🤖 Scikit-learn | Machine learning and model training |
+| 💾 Joblib | Model serialization and loading |
+| 📊 Matplotlib | Data visualization and analysis |
+| 🌐 Streamlit | Interactive prediction interface |
+| 📓 Jupyter / Google Colab | Data analysis, experimentation, and model development |
