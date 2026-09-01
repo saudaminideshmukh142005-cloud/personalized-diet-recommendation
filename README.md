@@ -304,6 +304,7 @@ http://localhost:8501
 ### 5. Make a Prediction
 
 Enter the required user details in the **NutriCare** interface and click the prediction button to get the predicted **Caloric Intake**.
+---
 
 ## 📂 Project Structure
 
