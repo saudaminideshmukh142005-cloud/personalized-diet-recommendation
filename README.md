@@ -44,6 +44,25 @@ The main objectives of this project are:
 12. Deploy the model using a simple Streamlit interface.
 
 ---
+# 📊 Dataset
+
+The dataset contains **5,000 records**.
+
+The target variable selected for this project is **`Caloric_Intake`**.
+
+### 🎯 Target Summary
+
+| Statistic          |    Value |
+| ------------------ | -------: |
+| Count              |    5,000 |
+| Mean               | 2,347.35 |
+| Standard Deviation |   659.88 |
+| Minimum            |    1,200 |
+| Median             | 2,350.50 |
+| Maximum            |    3,499 |
+
+`Caloric_Intake` is a **continuous numerical variable**, therefore this project is treated as a **regression problem**.
+---
 
 ## 🔬 Research Focus — Data Leakage
 
