@@ -61,7 +61,6 @@ The target variable selected for this project is **`Caloric_Intake`**.
 | Median             | 2,350.50 |
 | Maximum            |    3,499 |
 
-`Caloric_Intake` is a *continuous numerical variable*, therefore this project is treated as a *regression problem*.
 ---
 
 ## 🔬 Research Focus — Data Leakage
