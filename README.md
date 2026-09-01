@@ -82,7 +82,7 @@ Three strategies were considered:
 * **Mode Imputation:** Preserves records but may reduce variation and introduce majority-class bias.
 * **Unknown Category:** Preserves records while retaining information that the value was missing.
 
-**Key takeaway:** Missing-value handling was treated as a modeling decision because it can affect the **training data, feature distributions, model performance, and generalization**.
+Key takeaway: Missing-value handling was treated as a modeling decision because it can affect the training data, feature distributions, model performance, and generalization.
 ---
 
 ## 🔬 Research Focus — Data Leakage
