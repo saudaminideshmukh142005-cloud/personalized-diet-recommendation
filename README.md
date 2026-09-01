@@ -26,67 +26,38 @@ The major focus of this project is to investigate:
 
 ---
 
-## 🎯 Project Objective
+## 🎯 Main Objective
 
-The project follows a research-oriented approach rather than simply training a model and reporting accuracy.
+The main objectives of this project are:
 
-The main question investigated is:
-
-> **Does better preprocessing always mean better machine learning performance, or can hidden data leakage make a model appear artificially accurate?**
+1. Understand the original dataset before model training.
+2. Identify missing values and understand their distribution.
+3. Investigate duplicate records.
+4. Detect and validate noisy or logically inconsistent data.
+5. Validate BMI using height and weight.
+6. Validate systolic and diastolic blood pressure values.
+7. Compare different missing-value handling approaches.
+8. Detect possible data leakage.
+9. Understand how leakage can artificially improve model performance.
+10. Build a clean Machine Learning model without leakage.
+11. Evaluate the model using MAE, RMSE and R².
+12. Deploy the model using a simple Streamlit interface.
 
 ---
 
-## 🔬 Project Workflow
+##🔬 Research Focus — Data Leakage
 
- '''text
-Original Dataset
-       ↓
-Data Understanding
-       ↓
-Missing Value Analysis
-       ↓
-Duplicate Analysis
-       ↓
-Noisy Data Validation
-       ├── BMI Validation
-       └── Blood Pressure Validation
-       ↓
-Preprocessing Experiments
-       ├── Drop Rows
-       ├── Mode Imputation
-       └── Unknown Category
-       ↓
-Data Leakage Detection
-       ├── Recommended_Calories
-       └── Calorie Difference
-       ↓
-Clean Dataset
-       ↓
-Train / Test Split
-       ↓
-Preprocessing Pipeline
-       ↓
-Model Training
-       ↓
-Model Evaluation
-       ↓
-Streamlit Prediction UI
+## 🚨 Why Data Leakage Matters
 
-'''
-## 📊 Dataset
+One of the most important findings of this project was **data leakage**.
 
-The dataset contains 5000 records.
+Data leakage occurs when information that should not be available to the model during prediction is used as an input feature.
 
-The target variable selected for this project is:
+This can make the model appear highly accurate during testing, while the performance may not represent how the model would behave on genuinely unseen real-world data.
 
-Caloric_Intake
-Target Summary
-Statistic	Value
-Count	5000
-Mean	2347.35
-Standard Deviation	659.88
-Minimum	1200
-Median	2350.50
-Maximum	3499
+### Example
 
-Caloric_Intake is a continuous numerical variable, therefore this is treated as a regression problem.
+The dataset contained a feature:
+
+```text
+Recommended_Calories
