@@ -67,7 +67,7 @@ This can make the model appear highly accurate during testing, while the perform
 
 The dataset contained a feature:
 
-```text
+
 Recommended_Calories
 
 
