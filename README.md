@@ -63,3 +63,26 @@ This can make the model appear highly accurate during testing, while the perform
 |---|---|---:|---:|---:|
 | Leakage Model | Included | 90.03 | 107.68 | 0.9734 |
 | Clean Model | Removed | 580.67 | 667.32 | -0.0223 |
+
+
+##  🧹 Data Quality & Preprocessing
+
+Data preprocessing focused on making **evidence-based decisions** rather than simply removing duplicates and missing values.
+
+### Missing Value Analysis
+
+The dataset contained missing values in three categorical features:
+
+| Feature         | Missing Values |
+| --------------- | -------------: |
+| Chronic_Disease |          2,043 |
+| Allergies       |          3,497 |
+| Food_Aversions  |          1,225 |
+
+Three strategies were considered:
+
+* **Row Removal:** Causes substantial data loss when multiple features contain missing values.
+* **Mode Imputation:** Preserves records but may reduce variation and introduce majority-class bias.
+* **Unknown Category:** Preserves records while retaining information that the value was missing.
+
+**Key takeaway:** Missing-value handling was treated as a modeling decision because it can affect the **training data, feature distributions, model performance, and generalization**.
