@@ -64,6 +64,7 @@ This can make the model appear highly accurate during testing, while the perform
 | Leakage Model | Included | 90.03 | 107.68 | 0.9734 |
 | Clean Model | Removed | 580.67 | 667.32 | -0.0223 |
 
+---
 
 ##  🧹 Data Quality & Preprocessing
 
@@ -86,3 +87,141 @@ Three strategies were considered:
 * **Unknown Category:** Preserves records while retaining information that the value was missing.
 
 **Key takeaway:** Missing-value handling was treated as a modeling decision because it can affect the **training data, feature distributions, model performance, and generalization**.
+
+# 🧠 What I Learned
+
+This project taught me that **Machine Learning is not just about choosing an algorithm and achieving a high evaluation score.** Reliable ML depends heavily on understanding the data, validating assumptions, and making scientifically justified preprocessing decisions.
+
+The most important lessons from this project were:
+
+### 1. Missing Values Are a Data Problem, Not Just a Cleaning Problem
+
+Missing values should not automatically be removed or replaced.
+
+The appropriate strategy depends on:
+
+* Percentage of missing data
+* Feature type
+* Meaning of the missingness
+* Information loss
+* Impact on model behavior
+
+**Key concept:**
+
+> Missing-value treatment should preserve useful information while minimizing bias and unnecessary data loss.
+
+---
+
+### 2. Duplicate Detection Requires Context
+
+A duplicate is not always simply a row that looks similar to another row.
+
+It is important to distinguish between:
+
+* **Exact duplicates** — identical records
+* **Similar records** — different observations that may legitimately share similar values
+
+Removing valid similar observations can reduce the diversity of the dataset and introduce unintended bias.
+
+**Key concept:**
+
+> Data cleaning should remove redundancy, not legitimate variation.
+
+---
+
+### 3. Outliers and Noise Must Be Validated
+
+An unusual value is not automatically an incorrect value.
+
+Instead of blindly removing outliers, I applied **domain-based validation**, including:
+
+* BMI consistency checks
+* Blood pressure logical validation
+* Numerical consistency checks
+
+This helped distinguish between **legitimate extreme observations** and **potentially erroneous records**.
+
+**Key concept:**
+
+> Statistical unusualness does not necessarily mean data invalidity.
+
+---
+
+### 4. Data Leakage Can Create Misleadingly High Performance
+
+One of the most important concepts I learned was **data leakage**.
+
+A model can achieve an apparently excellent result, such as:
+
+**R² ≈ 0.97**
+
+while still being unreliable if a feature contains information that would not legitimately be available at prediction time.
+
+In this project, removing the leakage-related feature caused a substantial change in model performance.
+
+This demonstrated that:
+
+> **High accuracy does not necessarily mean a good Machine Learning model.**
+
+The real objective is to build a model that performs well using **valid, independent, and realistically available information**.
+
+---
+
+### 5. Preprocessing Is Part of the Modeling Process
+
+Preprocessing is not an isolated step performed before Machine Learning.
+
+Every preprocessing decision can influence:
+
+```text
+Raw Data
+   ↓
+Data Quality
+   ↓
+Missing Values / Noise / Outliers
+   ↓
+Feature Representation
+   ↓
+Training Data
+   ↓
+Testing Data
+   ↓
+Model Performance
+   ↓
+Final Conclusions
+```
+
+Changing how missing values, duplicates, noise, or leakage are handled can change the data distribution and ultimately affect model performance.
+
+**Key concept:**
+
+> Preprocessing decisions are modeling decisions because they directly influence what information the model learns from.
+
+---
+
+### 6. Model Performance Must Be Interpreted, Not Just Reported
+
+Another important lesson was that evaluation metrics should be interpreted in the context of the problem.
+
+I learned to look beyond a single metric and compare:
+
+* **MAE** — average magnitude of prediction error
+* **RMSE** — sensitivity to larger errors
+* **R²** — proportion of variance explained by the model
+
+More importantly, these metrics must be considered alongside **data quality, leakage, feature validity, and generalization**.
+
+---
+
+### 🎯 Overall Learning
+
+The biggest lesson from this project was:
+
+> **Reliable Machine Learning is more important than artificially high performance.**
+
+A strong ML workflow should therefore focus on:
+
+**Data Quality → Valid Preprocessing → Leakage Detection → Appropriate Modeling → Meaningful Evaluation → Reliable Conclusions**
+
+This project shifted my perspective from **“How can I get a better score?”** to **“Why is the model performing this way, and can I trust the result?”**
+
