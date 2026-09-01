@@ -353,3 +353,12 @@ personalized-diet-recommendation/
 | `README.md`                             | Project documentation                         |
 | `.gitignore`                            | Files and folders excluded from Git tracking  |
 
+---
+## 👩‍💻 Author
+
+**Saudamini Deshmukh**
+This project was developed as part of my learning journey in **Machine Learning, Data Preprocessing, Model Evaluation, and Streamlit application development**.
+
+⭐ If you found this project useful, feel free to star the repository!
+
+
