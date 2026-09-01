@@ -62,28 +62,6 @@ The target variable selected for this project is **`Caloric_Intake`**.
 | Maximum            |    3,499 |
 
 ---
-
-## 🔬 Research Focus — Data Leakage
-
-Why Data Leakage Matters:-
-
-One of the most important findings of this project was **data leakage**.
-
-Data leakage occurs when information that should not be available to the model during prediction is used as an input feature.
-
-This can make the model appear highly accurate during testing, while the performance may not represent how the model would behave on genuinely unseen real-world data.
-
-
-
-### Model Performance: Data Leakage Impact
-
-| Model | Recommended_Calories | MAE | RMSE | R² |
-|---|---|---:|---:|---:|
-| Leakage Model | Included | 90.03 | 107.68 | 0.9734 |
-| Clean Model | Removed | 580.67 | 667.32 | -0.0223 |
-
----
-
 ##  🧹 Data Quality & Preprocessing
 
 Data preprocessing focused on making **evidence-based decisions** rather than simply removing duplicates and missing values.
@@ -106,6 +84,29 @@ Three strategies were considered:
 
 **Key takeaway:** Missing-value handling was treated as a modeling decision because it can affect the **training data, feature distributions, model performance, and generalization**.
 ---
+
+## 🔬 Research Focus — Data Leakage
+
+Why Data Leakage Matters:-
+
+One of the most important findings of this project was **data leakage**.
+
+Data leakage occurs when information that should not be available to the model during prediction is used as an input feature.
+
+This can make the model appear highly accurate during testing, while the performance may not represent how the model would behave on genuinely unseen real-world data.
+
+
+
+### Model Performance: Data Leakage Impact
+
+| Model | Recommended_Calories | MAE | RMSE | R² |
+|---|---|---:|---:|---:|
+| Leakage Model | Included | 90.03 | 107.68 | 0.9734 |
+| Clean Model | Removed | 580.67 | 667.32 | -0.0223 |
+
+---
+
+
 
 # 🧠 What I Learned
 
@@ -321,10 +322,6 @@ app.py
 clean_model.pkl
 requirements.txt
 ```
-
-The dataset used for training is not required to run the deployed prediction interface if the trained model has already been saved.
----
-
 ### 📂 Project Structure
 
 ```text
