@@ -227,7 +227,7 @@ A strong ML workflow should therefore focus on:
 This project shifted my perspective from *“How can I get a better score?”* to *“Why is the model performing this way, and can I trust the result?”*
 
 ---
-### 🏗️ Technologies Used
+## 🏗️ Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
