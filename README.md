@@ -324,14 +324,11 @@ requirements.txt
 
 The dataset used for training is not required to run the deployed prediction interface if the trained model has already been saved.
 ---
-📂 Project Structure
-iet-prediction/
-│
-├── .git/
-│
-├── .venv/
-│
-├── .vscode/
+
+## 📂 Project Structure
+
+```text
+personalized-diet-recommendation/
 │
 ├── notebooks/
 │   └── GitHub_project.ipynb
@@ -342,15 +339,17 @@ iet-prediction/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
 
-📄 File Description
-File / Folder	Description
-app.py	Streamlit prediction application
-clean_model.pkl	Trained machine learning model
-GitHub_project.ipynb	Complete data analysis and ML experimentation
-Personalized_Diet_Recommendations.csv	Original dataset
-requirements.txt	Required Python libraries
-README.md	Project documentation
-.gitignore	Files excluded from GitHub
-.venv/	Local Python virtual environment
+## 📄 File Description
+
+| File / Folder                           | Description                                   |
+| --------------------------------------- | --------------------------------------------- |
+| `app.py`                                | Streamlit prediction application              |
+| `clean_model.pkl`                       | Trained machine learning model                |
+| `notebooks/GitHub_project.ipynb`        | Complete data analysis and ML experimentation |
+| `Personalized_Diet_Recommendations.csv` | Original dataset                              |
+| `requirements.txt`                      | Required Python libraries                     |
+| `README.md`                             | Project documentation                         |
+| `.gitignore`                            | Files and folders excluded from Git tracking  |
 
