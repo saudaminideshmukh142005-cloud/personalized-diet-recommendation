@@ -257,3 +257,70 @@ This project shifted my perspective from *“How can I get a better score?”* t
 | 📊 Matplotlib | Data visualization and analysis |
 | 🌐 Streamlit | Interactive prediction interface |
 | 📓 Jupyter / Google Colab | Data analysis, experimentation, and model development |
+
+---
+## 🚀 How to Run
+
+Follow the steps below to run the Personalized Diet Recommendation application locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone <your-repository-url>
+cd personalized-diet-recommendation
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Activate the virtual environment:
+
+**Windows:**
+
+```bash
+.venv\Scripts\activate
+```
+
+**macOS / Linux:**
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Streamlit Application
+
+```bash
+python -m streamlit run app.py
+```
+
+The application will open in your browser at:
+
+```text
+http://localhost:8501
+```
+
+### 5. Use the Application
+
+Enter the required user information in the **NutriCare** interface and click the prediction button to generate the predicted caloric intake.
+
+### ⚠️ Important
+
+Make sure the trained model file is present in the project directory before running the application.
+
+```text
+app.py
+clean_model.pkl
+requirements.txt
+```
+
+The dataset used for training is not required to run the deployed prediction interface if the trained model has already been saved.
+
