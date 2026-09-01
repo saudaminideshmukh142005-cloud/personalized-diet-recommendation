@@ -67,7 +67,7 @@ This can make the model appear highly accurate during testing, while the perform
 
 The dataset contained a feature:
 
-
+...text
 Recommended_Calories
 
 
@@ -108,6 +108,8 @@ High model performance does not always mean a good model.
 A model can achieve an excellent R² score because of leakage rather than because it has genuinely learned useful relationships from independent input features.
 
 This was one of the main learning outcomes of the project.
+
+
 
 📊 Leakage vs Clean Model
 Model	Recommended_Calories	MAE	RMSE	R²
